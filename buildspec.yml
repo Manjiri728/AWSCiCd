@@ -9,9 +9,7 @@ phases:
       - echo Build started
   post_build:
     commands:
-      - echo Deploying to EC2
-      - aws s3 cp s3://cicd-artifact-manjiri-230254493358-ap-south-1-an /tmp --recursive
-      - sudo cp -r * /var/www/html/
+      - echo Build completed
 
 artifacts:
   files:
